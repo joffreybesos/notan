@@ -661,7 +661,17 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "fc9fcd393c3daaaf5909008a1d948319d538b79c51871e4df0993260260a94e4"
 dependencies = [
  "ahash 0.8.2",
- "epaint",
+ "epaint 0.19.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "nohash-hasher",
+]
+
+[[package]]
+name = "egui"
+version = "0.19.0"
+source = "git+https://github.com/joffreybesos/egui?branch=master#db5a42f1b07565f330a60be63fa637659b9ffffd"
+dependencies = [
+ "ahash 0.8.2",
+ "epaint 0.19.0 (git+https://github.com/joffreybesos/egui?branch=master)",
  "nohash-hasher",
 ]
 
@@ -671,7 +681,7 @@ version = "0.19.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "6c22edd72717f8eeeaa4fc0c8ba417d5a897781e4f164bfb19ac7ee6557bd11d"
 dependencies = [
- "egui",
+ "egui 0.19.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "egui_extras",
  "enum-map",
  "tracing",
@@ -684,7 +694,7 @@ version = "0.19.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f698f685bb0ad39e87109e2f695ded0bccde77d5d40bbf7590cb5561c1e3039d"
 dependencies = [
- "egui",
+ "egui 0.19.0 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
@@ -698,6 +708,11 @@ name = "emath"
 version = "0.19.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "9542a40106fdba943a055f418d1746a050e1a903a049b030c2b097d4686a33cf"
+
+[[package]]
+name = "emath"
+version = "0.19.0"
+source = "git+https://github.com/joffreybesos/egui?branch=master#db5a42f1b07565f330a60be63fa637659b9ffffd"
 dependencies = [
  "bytemuck",
 ]
@@ -741,8 +756,21 @@ dependencies = [
  "ab_glyph",
  "ahash 0.8.2",
  "atomic_refcell",
+ "emath 0.19.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "nohash-hasher",
+ "parking_lot",
+]
+
+[[package]]
+name = "epaint"
+version = "0.19.0"
+source = "git+https://github.com/joffreybesos/egui?branch=master#db5a42f1b07565f330a60be63fa637659b9ffffd"
+dependencies = [
+ "ab_glyph",
+ "ahash 0.8.2",
+ "atomic_refcell",
  "bytemuck",
- "emath",
+ "emath 0.19.0 (git+https://github.com/joffreybesos/egui?branch=master)",
  "nohash-hasher",
  "parking_lot",
 ]
@@ -1773,7 +1801,7 @@ name = "notan_egui"
 version = "0.8.0"
 dependencies = [
  "bytemuck",
- "egui",
+ "egui 0.19.0 (git+https://github.com/joffreybesos/egui?branch=master)",
  "log",
  "notan_app",
  "notan_core",
