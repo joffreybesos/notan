@@ -668,7 +668,7 @@ checksum = "b601108bca3af7650440ace4ca55b2daf52c36f2635be3587d77b16efd8d0691"
 [[package]]
 name = "ecolor"
 version = "0.20.0"
-source = "git+https://github.com/joffreybesos/egui?branch=master#63979e09b83fd494482eb27b7a19fd4b4e30eb10"
+source = "git+https://github.com/joffreybesos/egui?branch=joff#d15bfcf9323bdff8b5aac7b295ba260ebbc78fa3"
 dependencies = [
  "bytemuck",
 ]
@@ -687,10 +687,10 @@ dependencies = [
 [[package]]
 name = "egui"
 version = "0.20.1"
-source = "git+https://github.com/joffreybesos/egui?branch=master#63979e09b83fd494482eb27b7a19fd4b4e30eb10"
+source = "git+https://github.com/joffreybesos/egui?branch=joff#d15bfcf9323bdff8b5aac7b295ba260ebbc78fa3"
 dependencies = [
  "ahash 0.8.2",
- "epaint 0.20.0 (git+https://github.com/joffreybesos/egui?branch=master)",
+ "epaint 0.20.0 (git+https://github.com/joffreybesos/egui?branch=joff)",
  "nohash-hasher",
 ]
 
@@ -732,7 +732,7 @@ checksum = "5277249c8c3430e7127e4f2c40a77485e7baf11ae132ce9b3253a8ed710df0a0"
 [[package]]
 name = "emath"
 version = "0.20.0"
-source = "git+https://github.com/joffreybesos/egui?branch=master#63979e09b83fd494482eb27b7a19fd4b4e30eb10"
+source = "git+https://github.com/joffreybesos/egui?branch=joff#d15bfcf9323bdff8b5aac7b295ba260ebbc78fa3"
 dependencies = [
  "bytemuck",
 ]
@@ -785,14 +785,14 @@ dependencies = [
 [[package]]
 name = "epaint"
 version = "0.20.0"
-source = "git+https://github.com/joffreybesos/egui?branch=master#63979e09b83fd494482eb27b7a19fd4b4e30eb10"
+source = "git+https://github.com/joffreybesos/egui?branch=joff#d15bfcf9323bdff8b5aac7b295ba260ebbc78fa3"
 dependencies = [
  "ab_glyph",
  "ahash 0.8.2",
  "atomic_refcell",
  "bytemuck",
- "ecolor 0.20.0 (git+https://github.com/joffreybesos/egui?branch=master)",
- "emath 0.20.0 (git+https://github.com/joffreybesos/egui?branch=master)",
+ "ecolor 0.20.0 (git+https://github.com/joffreybesos/egui?branch=joff)",
+ "emath 0.20.0 (git+https://github.com/joffreybesos/egui?branch=joff)",
  "nohash-hasher",
  "parking_lot",
 ]

@@ -13,7 +13,7 @@ description = "Provides EGUI support for Notan"
 
 [dependencies]
 log = "0.4.17"
-egui = { git = "https://github.com/joffreybesos/egui", branch = "master", features = ["bytemuck"] }
+egui = { git = "https://github.com/joffreybesos/egui", branch = "joff", features = ["bytemuck"] }
 bytemuck = "1.12.3"
 notan_core = { path = "../notan_core", version = "0.8.0" }
 notan_app = { path = "../notan_app", version = "0.8.0" }
