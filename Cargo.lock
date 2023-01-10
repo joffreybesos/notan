@@ -664,6 +664,11 @@ name = "ecolor"
 version = "0.20.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b601108bca3af7650440ace4ca55b2daf52c36f2635be3587d77b16efd8d0691"
+
+[[package]]
+name = "ecolor"
+version = "0.20.0"
+source = "git+https://github.com/emilk/egui#60b4f5e3fe00fe3f840374846dfd241817e6bf1e"
 dependencies = [
  "bytemuck",
 ]
@@ -675,7 +680,17 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "2a4daecd807bfd4e30ad92f049b03d92f506a3fddfad852babaa03cba180adfa"
 dependencies = [
  "ahash 0.8.2",
- "epaint",
+ "epaint 0.20.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "nohash-hasher",
+]
+
+[[package]]
+name = "egui"
+version = "0.20.1"
+source = "git+https://github.com/emilk/egui#60b4f5e3fe00fe3f840374846dfd241817e6bf1e"
+dependencies = [
+ "ahash 0.8.2",
+ "epaint 0.20.0 (git+https://github.com/emilk/egui)",
  "nohash-hasher",
 ]
 
@@ -685,7 +700,7 @@ version = "0.20.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b191e5870e6cff885cf56d4e6c3a10ce0c66d9d855a92c1eaca96b0f1111c0aa"
 dependencies = [
- "egui",
+ "egui 0.20.0",
  "egui_extras",
  "enum-map",
  "tracing",
@@ -698,7 +713,7 @@ version = "0.20.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "1975cd88ff7430f93b29e6b9868b648a8ff6a43b08b9ff8474ee0a648bd8f9a6"
 dependencies = [
- "egui",
+ "egui 0.20.0",
  "serde",
 ]
 
@@ -713,6 +728,11 @@ name = "emath"
 version = "0.20.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "5277249c8c3430e7127e4f2c40a77485e7baf11ae132ce9b3253a8ed710df0a0"
+
+[[package]]
+name = "emath"
+version = "0.20.0"
+source = "git+https://github.com/emilk/egui#60b4f5e3fe00fe3f840374846dfd241817e6bf1e"
 dependencies = [
  "bytemuck",
 ]
@@ -756,9 +776,23 @@ dependencies = [
  "ab_glyph",
  "ahash 0.8.2",
  "atomic_refcell",
+ "ecolor 0.20.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "emath 0.20.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "nohash-hasher",
+ "parking_lot",
+]
+
+[[package]]
+name = "epaint"
+version = "0.20.0"
+source = "git+https://github.com/emilk/egui#60b4f5e3fe00fe3f840374846dfd241817e6bf1e"
+dependencies = [
+ "ab_glyph",
+ "ahash 0.8.2",
+ "atomic_refcell",
  "bytemuck",
- "ecolor",
- "emath",
+ "ecolor 0.20.0 (git+https://github.com/emilk/egui)",
+ "emath 0.20.0 (git+https://github.com/emilk/egui)",
  "nohash-hasher",
  "parking_lot",
 ]
@@ -1788,7 +1822,7 @@ name = "notan_egui"
 version = "0.8.0"
 dependencies = [
  "bytemuck",
- "egui",
+ "egui 0.20.1",
  "log",
  "notan_app",
  "notan_core",
