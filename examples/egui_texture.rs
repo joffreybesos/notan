@@ -33,7 +33,7 @@ fn main() -> Result<(), String> {
 
 fn draw(gfx: &mut Graphics, plugins: &mut Plugins, state: &mut State) {
     let mut output = plugins.egui(|ctx| {
-        egui::Window::new("Notan Texture").show(ctx, |ui| {
+        egui::Window::new("Notan Texture").default_open(false).show(ctx, |ui| {
             ui.image(state.tex_id, state.img_size);
         });
     });
