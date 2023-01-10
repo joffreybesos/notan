@@ -203,6 +203,7 @@ impl Plugin for EguiPlugin {
                         key,
                         pressed: true,
                         modifiers,
+                        repeat: false,
                     })
                 }
             }
@@ -213,6 +214,7 @@ impl Plugin for EguiPlugin {
                         key,
                         pressed: false,
                         modifiers,
+                        repeat: false,
                     })
                 }
             }
